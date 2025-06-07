@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Pribadi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#playlist">playlist</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="slide">
+          <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David arfiansa - Profil Pribadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      text-align: center;
+    }
+    .intro {
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #222;
+      margin: 0;
+    }
+    .highlight {
+      font-weight: 700;
+      color: #111;
+    }
+    p {
+      font-size: 18px;
+      color: #888;
+      margin: 10px 0;
+    }
+    .buttons {
+      margin-top: 15px;
+    }
+    .buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .read-more {
+      background-color: #222;
+      color: #fff;
+    }
+    .download-cv {
+      background-color: #fff;
+      border: 2px solid #222;
+      color: #222;
+    }
+    .photo img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">
+    <h1>Hi! I’m <span class="highlight">David arfiansa</span></h1>
+    <p>I am a <span class="highlight">Web Programmer</span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+  <div style="text-align: center; max-width: 480px;">
+    <div id="video1" style="display: none; margin-bottom: 10px;">
+      <video controls style="width: 100%; border-radius: 12px;">
+        <source src="rangku.mp4" type="video/mp4">
+      </video>
+    </div>
+    <button onclick="toggleVideo('video1', this)" style="
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+      Tampilkan Video 1
+    </button>
+  </div>
+
+  <div style="text-align: center; max-width: 480px;">
+    <div id="video2" style="display: none; margin-bottom: 10px;">
+      <video controls style="width: 100%; border-radius: 12px;">
+        <source src="video pantai.mp4" type="video/mp4">
+      </video>
+    </div>
+    <button onclick="toggleVideo('video2', this)" style="
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #24c6dc, #514a9d);
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+      Tampilkan Video 2
+    </button>
+  </div>
+</div>
+<script>
+  function toggleVideo(id, btn) {
+    const video = document.getElementById(id);
+    const isHidden = video.style.display === 'none';
+    video.style.display = isHidden ? 'block' : 'none';
+    btn.textContent = isHidden ? 'Sembunyikan ' + btn.textContent.replace('Tampilkan ', '') : 'Tampilkan ' + btn.textContent.replace('Sembunyikan ', '');
+  }
+</script>
+  <div class="photo">
+    <img src="wa.jpg" alt="David Arfiansa"/>
+  </div>
+</body>
+    <a href="#about">Lanjut ke profil pribadi ↓</a>
+  </section>
+
+  <section id="about" class="slide">
+    <h2>Profil pribadi</h2>
+    <p>Saya adalah ketua kelas dan calon ketua organisasi pramuka</p>
+<a href="profil pribadi .html" class="unique-button">Pencet ini</a>
+    <a href="#home">↑ Kembali ke Beranda</a> | <a href="#playlist">Lanjut ke Playlist ↓</a>
+  </section>
+
+<section id="playlist" class="slide">
+  <h2>Playlist Favorit Saya 🎧</h2>
+  <p>Ini tu playlist yg sering ku dengar pas lagi ngegame atau lagi santai</p>
+  
+  <iframe style="border-radius:12px" 
+  src="https://open.spotify.com/embed/playlist/1PIFCJswBHET3EVauyxmb1?utm_source=generator" 
+  width="100%" height="352" frameborder="0" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>
+
+  <a href="#about">↑ Kembali ke profil pribadi</a> | <a href="#contact">Lanjut ke Kontak ↓</a>
+</section>
+
+  <section id="contact" class="slide">
+      <h2>Kontak/Media sosial</h2>
+      <p>No  wa: 0882-7905-5479</>
+      <p> Email: davidarfian00@gmail.com</p>
+      
+    <div class="social-buttons">
+    <a href="https://www.instagram.com/davidarfnsya" target="_blank" class="btn instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram
+    </a>
+    <a href="https://www.facebook.com/David Arfiansa" target="_blank" class="btn facebook">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook"> Facebook
+    </a>
+    <a href="https://www.tiktok.com/@yangliatbaik" target="_blank" class="btn tiktok">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/TikTok_logo.svg" alt="TikTok"> TikTok
+    </a>
+
+  </div>
+    <a href="#playlist">↑ Kembali ke playlist</a> | <a href="#home">Kembali ke Beranda ↑</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
